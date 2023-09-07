@@ -1,5 +1,12 @@
 # Unreleased
 
+## 2.17.4
+
+### Patch Changes
+
+- Updated dependencies [[`2aa110c9c`](https://github.com/forbole/big-dipper-2.0-cosmos/commit/2aa110c9c7c7965bfa468c07797a820387094834)]:
+  - ui@2.37.0
+
 ## 2.17.3
 
 ### Patch Changes

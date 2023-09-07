@@ -1,5 +1,11 @@
 # ui
 
+## 2.37.0
+
+### Minor Changes
+
+- [#1300](https://github.com/forbole/big-dipper-2.0-cosmos/pull/1300) [`2aa110c9c`](https://github.com/forbole/big-dipper-2.0-cosmos/commit/2aa110c9c7c7965bfa468c07797a820387094834) Thanks [@rachelhox](https://github.com/rachelhox)! - fix: account page issue
+
 ## 2.36.0
 
 ### Minor Changes
