@@ -21,7 +21,20 @@ COPY . .
 
 RUN corepack enable && yarn -v && yarn install --inline-builds
 
+## Setting up the environment variables for the docker container.
 ARG PROJECT_NAME=web-ixo
+ENV NODE_ENV=production
+# Devnet
+# ENV NEXT_PUBLIC_GRAPHQL_URL=https://graphql.blockscan.devnet.ixo.earth/v1/graphql
+# ENV NEXT_PUBLIC_GRAPHQL_WS=wss://graphql.blockscan.devnet.ixo.earth/v1/graphql
+# ENV NEXT_PUBLIC_RPC_WEBSOCKET=wss://devnet.ixo.earth/rpc/websocket
+# ENV NEXT_PUBLIC_CHAIN_TYPE=devnet
+# Testnet
+ENV NEXT_PUBLIC_GRAPHQL_URL=https://graphql.blockscan.testnet.ixo.earth/v1/graphql
+ENV NEXT_PUBLIC_GRAPHQL_WS=wss://graphql.blockscan.testnet.ixo.earth/v1/graphql
+ENV NEXT_PUBLIC_RPC_WEBSOCKET=wss://testnet.ixo.earth/rpc/websocket
+ENV NEXT_PUBLIC_CHAIN_TYPE=testnet
+
 ## Build the project
 RUN yarn workspace ${PROJECT_NAME} add sharp && yarn workspace ${PROJECT_NAME} run build
 
