@@ -44,6 +44,26 @@ export const getFilterLabels = () => [
     display: 'profiles',
   },
   {
+    key: 'entity',
+    display: 'entity',
+  },
+  {
+    key: 'claims',
+    display: 'claims',
+  },
+  {
+    key: 'token',
+    display: 'token',
+  },
+  {
+    key: 'iid',
+    display: 'iid',
+  },
+  {
+    key: 'bonds',
+    display: 'bonds',
+  },
+  {
     key: 'others',
     display: 'others',
   },

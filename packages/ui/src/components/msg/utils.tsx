@@ -410,6 +410,262 @@ const customTypeToModel = {
     tagTheme: 'four',
     tagDisplay: 'txUnblockUserLabel',
   },
+  // ========================
+  // entity
+  // ========================
+  '/ixo.entity.v1beta1.MsgTransferEntity': {
+    model: MODELS.MsgTransferEntity,
+    // content: COMPONENTS.TransferEntity,
+    tagTheme: 'four',
+    tagDisplay: 'MsgTransferEntity',
+  },
+  '/ixo.entity.v1beta1.MsgGrantEntityAccountAuthz': {
+    model: MODELS.MsgGrantEntityAccountAuthz,
+    tagTheme: 'four',
+    tagDisplay: 'MsgGrantEntityAccountAuthz',
+  },
+  '/ixo.entity.v1beta1.MsgCreateEntity': {
+    model: MODELS.MsgCreateEntity,
+    tagTheme: 'four',
+    tagDisplay: 'MsgCreateEntity',
+  },
+  '/ixo.entity.v1beta1.MsgCreateEntityAccounts': {
+    model: MODELS.MsgCreateEntityAccounts,
+    tagTheme: 'four',
+    tagDisplay: 'MsgCreateEntityAccounts',
+  },
+  '/ixo.entity.v1beta1.MsgUpdateEntityVerified': {
+    model: MODELS.MsgUpdateEntityVerified,
+    tagTheme: 'four',
+    tagDisplay: 'MsgUpdateEntityVerified',
+  },
+  '/ixo.entity.v1beta1.MsgUpdateEntity': {
+    model: MODELS.MsgUpdateEntity,
+    tagTheme: 'four',
+    tagDisplay: 'MsgUpdateEntity',
+  },
+  // ========================
+  // bonds
+  // ========================
+  '/ixo.bonds.v1beta1.MsgBuy': {
+    model: MODELS.MsgBuy,
+    tagTheme: 'four',
+    tagDisplay: 'MsgBuy',
+  },
+  '/ixo.bonds.v1beta1.MsgCreateBond': {
+    model: MODELS.MsgCreateBond,
+    tagTheme: 'four',
+    tagDisplay: 'MsgCreateBond',
+  },
+  '/ixo.bonds.v1beta1.MsgEditBond': {
+    model: MODELS.MsgEditBond,
+    tagTheme: 'four',
+    tagDisplay: 'MsgEditBond',
+  },
+  '/ixo.bonds.v1beta1.MsgMakeOutcomePayment': {
+    model: MODELS.MsgMakeOutcomePayment,
+    tagTheme: 'four',
+    tagDisplay: 'MsgMakeOutcomePayment',
+  },
+  '/ixo.bonds.v1beta1.MsgSell': {
+    model: MODELS.MsgSell,
+    tagTheme: 'four',
+    tagDisplay: 'MsgSell',
+  },
+  '/ixo.bonds.v1beta1.MsgSetNextAlpha': {
+    model: MODELS.MsgSetNextAlpha,
+    tagTheme: 'four',
+    tagDisplay: 'MsgSetNextAlpha',
+  },
+  '/ixo.bonds.v1beta1.MsgSwap': {
+    model: MODELS.MsgSwap,
+    tagTheme: 'four',
+    tagDisplay: 'MsgSwap',
+  },
+  '/ixo.bonds.v1beta1.MsgUpdateBondState': {
+    model: MODELS.MsgUpdateBondState,
+    tagTheme: 'four',
+    tagDisplay: 'MsgUpdateBondState',
+  },
+  '/ixo.bonds.v1beta1.MsgWithdrawReserve': {
+    model: MODELS.MsgWithdrawReserve,
+    tagTheme: 'four',
+    tagDisplay: 'MsgWithdrawReserve',
+  },
+  '/ixo.bonds.v1beta1.MsgWithdrawShare': {
+    model: MODELS.MsgWithdrawShare,
+    tagTheme: 'four',
+    tagDisplay: 'MsgWithdrawShare',
+  },
+  // ========================
+  // claims
+  // ========================
+  '/ixo.claims.v1beta1.MsgCreateCollection': {
+    model: MODELS.MsgCreateCollection,
+    tagTheme: 'four',
+    tagDisplay: 'MsgCreateCollection',
+  },
+  '/ixo.claims.v1beta1.MsgDisputeClaim': {
+    model: MODELS.MsgDisputeClaim,
+    tagTheme: 'four',
+    tagDisplay: 'MsgDisputeClaim',
+  },
+  '/ixo.claims.v1beta1.MsgEvaluateClaim': {
+    model: MODELS.MsgEvaluateClaim,
+    tagTheme: 'four',
+    tagDisplay: 'MsgEvaluateClaim',
+  },
+  '/ixo.claims.v1beta1.MsgSubmitClaim': {
+    model: MODELS.MsgSubmitClaim,
+    tagTheme: 'four',
+    tagDisplay: 'MsgSubmitClaim',
+  },
+  '/ixo.claims.v1beta1.MsgWithdrawPayment': {
+    model: MODELS.MsgWithdrawPayment,
+    tagTheme: 'four',
+    tagDisplay: 'MsgWithdrawPayment',
+  },
+  // ========================
+  // token
+  // ========================
+  '/ixo.token.v1beta1.MsgCancelToken': {
+    model: MODELS.MsgCancelToken,
+    tagTheme: 'four',
+    tagDisplay: 'MsgCancelToken',
+  },
+  '/ixo.token.v1beta1.MsgCreateToken': {
+    model: MODELS.MsgCreateToken,
+    tagTheme: 'four',
+    tagDisplay: 'MsgCreateToken',
+  },
+  '/ixo.token.v1beta1.MsgMintToken': {
+    model: MODELS.MsgMintToken,
+    tagTheme: 'four',
+    tagDisplay: 'MsgMintToken',
+  },
+  '/ixo.token.v1beta1.MsgPauseToken': {
+    model: MODELS.MsgPauseToken,
+    tagTheme: 'four',
+    tagDisplay: 'MsgPauseToken',
+  },
+  '/ixo.token.v1beta1.MsgRetireToken': {
+    model: MODELS.MsgRetireToken,
+    tagTheme: 'four',
+    tagDisplay: 'MsgRetireToken',
+  },
+  '/ixo.token.v1beta1.MsgStopToken': {
+    model: MODELS.MsgStopToken,
+    tagTheme: 'four',
+    tagDisplay: 'MsgStopToken',
+  },
+  '/ixo.token.v1beta1.MsgTransferToken': {
+    model: MODELS.MsgTransferToken,
+    tagTheme: 'four',
+    tagDisplay: 'MsgTransferToken',
+  },
+  // ========================
+  // iid
+  // ========================
+  '/ixo.iid.v1beta1.MsgCreateIidDocument': {
+    model: MODELS.MsgCreateIidDocument,
+    tagTheme: 'four',
+    tagDisplay: 'MsgCreateIidDocument',
+  },
+  '/ixo.iid.v1beta1.MsgDeactivateIID': {
+    model: MODELS.MsgDeactivateIID,
+    tagTheme: 'four',
+    tagDisplay: 'MsgDeactivateIID',
+  },
+  '/ixo.iid.v1beta1.MsgUpdateIidDocument': {
+    model: MODELS.MsgUpdateIidDocument,
+    tagTheme: 'four',
+    tagDisplay: 'MsgUpdateIidDocument',
+  },
+  '/ixo.iid.v1beta1.MsgAddVerification': {
+    model: MODELS.MsgAddVerification,
+    tagTheme: 'four',
+    tagDisplay: 'MsgAddVerification',
+  },
+  '/ixo.iid.v1beta1.MsgRevokeVerification': {
+    model: MODELS.MsgRevokeVerification,
+    tagTheme: 'four',
+    tagDisplay: 'MsgRevokeVerification',
+  },
+  '/ixo.iid.v1beta1.MsgSetVerificationRelationships': {
+    model: MODELS.MsgSetVerificationRelationships,
+    tagTheme: 'four',
+    tagDisplay: 'MsgSetVerificationRelationships',
+  },
+  '/ixo.iid.v1beta1.MsgAddService': {
+    model: MODELS.MsgAddService,
+    tagTheme: 'four',
+    tagDisplay: 'MsgAddService',
+  },
+  '/ixo.iid.v1beta1.MsgDeleteService': {
+    model: MODELS.MsgDeleteService,
+    tagTheme: 'four',
+    tagDisplay: 'MsgDeleteService',
+  },
+  '/ixo.iid.v1beta1.MsgAddController': {
+    model: MODELS.MsgAddController,
+    tagTheme: 'four',
+    tagDisplay: 'MsgAddController',
+  },
+  '/ixo.iid.v1beta1.MsgDeleteController': {
+    model: MODELS.MsgDeleteController,
+    tagTheme: 'four',
+    tagDisplay: 'MsgDeleteController',
+  },
+  '/ixo.iid.v1beta1.MsgAddLinkedResource': {
+    model: MODELS.MsgAddLinkedResource,
+    tagTheme: 'four',
+    tagDisplay: 'MsgAddLinkedResource',
+  },
+  '/ixo.iid.v1beta1.MsgDeleteLinkedResource': {
+    model: MODELS.MsgDeleteLinkedResource,
+    tagTheme: 'four',
+    tagDisplay: 'MsgDeleteLinkedResource',
+  },
+  '/ixo.iid.v1beta1.MsgAddLinkedClaim': {
+    model: MODELS.MsgAddLinkedClaim,
+    tagTheme: 'four',
+    tagDisplay: 'MsgAddLinkedClaim',
+  },
+  '/ixo.iid.v1beta1.MsgDeleteLinkedClaim': {
+    model: MODELS.MsgDeleteLinkedClaim,
+    tagTheme: 'four',
+    tagDisplay: 'MsgDeleteLinkedClaim',
+  },
+  '/ixo.iid.v1beta1.MsgAddLinkedEntity': {
+    model: MODELS.MsgAddLinkedEntity,
+    tagTheme: 'four',
+    tagDisplay: 'MsgAddLinkedEntity',
+  },
+  '/ixo.iid.v1beta1.MsgDeleteLinkedEntity': {
+    model: MODELS.MsgDeleteLinkedEntity,
+    tagTheme: 'four',
+    tagDisplay: 'MsgDeleteLinkedEntity',
+  },
+  '/ixo.iid.v1beta1.MsgAddAccordedRight': {
+    model: MODELS.MsgAddAccordedRight,
+    tagTheme: 'four',
+    tagDisplay: 'MsgAddAccordedRight',
+  },
+  '/ixo.iid.v1beta1.MsgDeleteAccordedRight': {
+    model: MODELS.MsgDeleteAccordedRight,
+    tagTheme: 'four',
+    tagDisplay: 'MsgDeleteAccordedRight',
+  },
+  '/ixo.iid.v1beta1.MsgAddIidContext': {
+    model: MODELS.MsgAddIidContext,
+    tagTheme: 'four',
+    tagDisplay: 'MsgAddIidContext',
+  },
+  '/ixo.iid.v1beta1.MsgDeleteIidContext': {
+    model: MODELS.MsgDeleteIidContext,
+    tagTheme: 'four',
+    tagDisplay: 'MsgDeleteIidContext',
+  },
 };
 type CustomTypeToModel = typeof customTypeToModel;
 

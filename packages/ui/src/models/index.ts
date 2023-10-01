@@ -69,3 +69,58 @@ export { default as MsgCreatePeriodicVestingAccount } from '@/models/msg/vesting
 export { default as MsgCreateVestingAccount } from '@/models/msg/vesting/msg_create_vesting_account';
 export { default as SlashingParams } from '@/models/slashing_params';
 export { default as StakingParams } from '@/models/staking_params';
+// Entity
+export { default as MsgTransferEntity } from '@/models/msg/entity/msg_transfer_entity';
+export { default as MsgCreateEntity } from '@/models/msg/entity/msg_create_entity';
+export { default as MsgGrantEntityAccountAuthz } from '@/models/msg/entity/msg_grant_entity_account_authz';
+export { default as MsgCreateEntityAccounts } from '@/models/msg/entity/msg_create_entity_account';
+export { default as MsgUpdateEntityVerified } from '@/models/msg/entity/msg_update_entity_verified';
+export { default as MsgUpdateEntity } from '@/models/msg/entity/msg_update_entity';
+// Bonds
+export { default as MsgBuy } from '@/models/msg/bonds/msg_buy';
+export { default as MsgCreateBond } from '@/models/msg/bonds/msg_create_bond';
+export { default as MsgEditBond } from '@/models/msg/bonds/msg_edit_bond';
+export { default as MsgMakeOutcomePayment } from '@/models/msg/bonds/msg_make_outcome_payment';
+export { default as MsgSell } from '@/models/msg/bonds/msg_sell';
+export { default as MsgSetNextAlpha } from '@/models/msg/bonds/msg_set_next_alpha';
+export { default as MsgSwap } from '@/models/msg/bonds/msg_swap';
+export { default as MsgUpdateBondState } from '@/models/msg/bonds/msg_update_bond_state';
+export { default as MsgWithdrawReserve } from '@/models/msg/bonds/msg_withdraw_reserve';
+export { default as MsgWithdrawShare } from '@/models/msg/bonds/msg_withdraw_share';
+// Claims
+export { default as MsgCreateCollection } from '@/models/msg/claims/msg_create_collection';
+export { default as MsgDisputeClaim } from '@/models/msg/claims/msg_dispute_claim';
+export { default as MsgEvaluateClaim } from '@/models/msg/claims/msg_evaluate_claim';
+export { default as MsgSubmitClaim } from '@/models/msg/claims/msg_submit_claim';
+export { default as MsgWithdrawPayment } from '@/models/msg/claims/msg_withdraw_payment';
+// Token
+export { default as MsgCancelToken } from '@/models/msg/token/msg_cancel_token';
+export { default as MsgCreateToken } from '@/models/msg/token/msg_create_token';
+export { default as MsgMintToken } from '@/models/msg/token/msg_mint_token';
+export { default as MsgPauseToken } from '@/models/msg/token/msg_pause_token';
+export { default as MsgRetireToken } from '@/models/msg/token/msg_retire_token';
+export { default as MsgStopToken } from '@/models/msg/token/msg_stop_token';
+export { default as MsgTransferToken } from '@/models/msg/token/msg_transfer_token';
+// Iid
+export { default as MsgCreateIidDocument } from '@/models/msg/iid/msg_create_iid_document';
+export { default as MsgDeactivateIID } from '@/models/msg/iid/msg_deactivate_iid';
+export { default as MsgUpdateIidDocument } from '@/models/msg/iid/msg_update_iid_document';
+export {
+  MsgRevokeVerification,
+  MsgAddVerification,
+  MsgSetVerificationRelationships,
+  MsgAddService,
+  MsgDeleteService,
+  MsgAddController,
+  MsgDeleteController,
+  MsgAddLinkedResource,
+  MsgDeleteLinkedResource,
+  MsgAddLinkedClaim,
+  MsgDeleteLinkedClaim,
+  MsgAddLinkedEntity,
+  MsgDeleteLinkedEntity,
+  MsgAddAccordedRight,
+  MsgDeleteAccordedRight,
+  MsgAddIidContext,
+  MsgDeleteIidContext,
+} from '@/models/msg/iid/msg_add_delete';

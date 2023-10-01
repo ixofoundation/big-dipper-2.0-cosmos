@@ -75,7 +75,11 @@ export const formatNumber = (tokenUnit: string, toFixed: number | null = null): 
   // decimal
   const decimal: string = split?.[1] ?? '';
   // add commas for fullnumber ex: 1000 -> 1,000
-  const formatWholeNumber = numeral(wholeNumber).format('0,0');
+  let formatWholeNumber = numeral(wholeNumber).format('0,0');
+
+  if (formatWholeNumber == 'NaN') {
+    formatWholeNumber = numeral(wholeNumber).format('0,0a');
+  }
 
   // in the event that there is actually decimals and tofixed has not been set to 0
   // we will handle the decimal

@@ -88,8 +88,13 @@ function useBigDipperNetworks(skipChainId = false) {
     if (isCompletedChainId && dataChainId) selectedNameVar(mapChainIdToModel(dataChainId));
   }, [isCompletedChainId, dataChainId]);
 
-  const networks = useReactiveVar(networksVar);
-  const setNetworks = useCallback((value: BigDipperNetwork[]) => networksVar(value), []);
+  // const networks = useReactiveVar(networksVar);
+  // const setNetworks = useCallback((value: BigDipperNetwork[]) => networksVar(value), []);
+  const networks = customIxoNetworks;
+  const setNetworks = useCallback(
+    (value: BigDipperNetwork[]) => networksVar(customIxoNetworks),
+    []
+  );
   const selectedName = useReactiveVar(selectedNameVar);
   const setSelectedName = useCallback((value: string) => selectedNameVar(value), []);
 
@@ -104,3 +109,32 @@ function useBigDipperNetworks(skipChainId = false) {
 }
 
 export default useBigDipperNetworks;
+
+const customIxoNetworks = [
+  {
+    logo: 'https://imagedelivery.net/OtofdrbkhRuyB7bPRelLLA/fd1bc10c-5463-47cc-bb43-9699468cde00/mobile',
+    name: 'Ixo',
+    mainnet: [
+      {
+        chainId: 'ixo-5',
+        url: 'https://www.mintscan.io/ixo',
+        name: 'Mainnet',
+      },
+    ],
+    testnet: [
+      {
+        chainId: 'pandora-8',
+        url: 'https://blockscan.testnet.ixo.earth',
+        name: 'Testnet',
+      },
+    ],
+    other: [
+      {
+        chainId: 'devnet-1',
+        url: 'https://blockscan.devnet.ixo.earth',
+        name: 'Devnet',
+      },
+    ],
+    retired: [],
+  },
+];
